@@ -20,3 +20,26 @@ class Stack
     end 
 
 end 
+
+# EXERCISE 2
+class Queue
+    attr_reader :enq_array
+    def initialize
+        @enq_array = []
+    end 
+    
+    def enqueue(el)
+        enq_array.push(el)
+    end 
+
+    def dequeue
+        enq_array.shift
+    end 
+
+    def peek
+        enq_array.first
+    end 
+
+end 
+
+# EXERCISE 3
